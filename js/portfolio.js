@@ -84,7 +84,11 @@
 
             <!-- NAVBAR da barbearia (fictícia) -->
             <nav style="display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:#111;border-bottom:1px solid #222;position:sticky;top:0;z-index:10;gap:12px;">
-              <div style="font-weight:900;font-size:1.1rem;letter-spacing:0.06em;color:#C8A96E;white-space:nowrap;">✂ BARBER<span style="color:#fff">KING</span></div>
+              <div style="font-weight:900;font-size:1.1rem;letter-spacing:0.06em;color:#C8A96E;white-space:nowrap;display:flex;align-items:center;gap:8px;">
+                <!-- Logo JG INFO versão escura (fundo escuro da barbearia) -->
+                <img src="assets/logo.png" alt="JG INFO" style="height:28px;width:auto;" />
+                ✂ BARBER<span style="color:#fff">KING</span>
+              </div>
               <div style="display:flex;gap:10px;align-items:center;">
                 <span style="font-size:0.8rem;color:#666;cursor:pointer;">Serviços</span>
                 <span style="font-size:0.8rem;color:#666;cursor:pointer;">Equipe</span>
@@ -346,7 +350,11 @@
 
             <!-- NAVBAR da padaria -->
             <nav style="display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:#fff;border-bottom:1px solid #f0e8d0;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-              <div style="font-weight:900;font-size:1rem;color:#8B4513;">🍞 Padaria <span style="color:#D4870A;">São João</span></div>
+              <div style="font-weight:900;font-size:1rem;color:#8B4513;display:flex;align-items:center;gap:8px;">
+                <!-- Logo JG INFO versão clara (fundo claro da padaria) -->
+                <img src="assets/logo-light.png" alt="JG INFO" style="height:30px;width:auto;" />
+                🍞 Padaria <span style="color:#D4870A;">São João</span>
+              </div>
               <!-- Botão do carrinho com badge de contador -->
               <button onclick="bakeryShowCart()"
                       style="background:#D4870A;color:#fff;border:none;padding:7px 16px;border-radius:8px;font-weight:700;cursor:pointer;font-size:0.82rem;display:flex;align-items:center;gap:6px;transition:all 0.2s;"
@@ -546,7 +554,11 @@
 
             <!-- NAVBAR da advocacia -->
             <nav style="display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:#0D0D1A;border-bottom:1px solid rgba(255,255,255,0.08);position:sticky;top:0;z-index:10;gap:12px;">
-              <div style="font-weight:900;font-size:0.9rem;white-space:nowrap;">⚖️ <span style="color:#C5A028;">Dr. Almeida</span> & Associados</div>
+              <div style="font-weight:900;font-size:0.9rem;white-space:nowrap;display:flex;align-items:center;gap:8px;">
+                <!-- Logo JG INFO versão escura (fundo escuro da advocacia) -->
+                <img src="assets/logo.png" alt="JG INFO" style="height:24px;width:auto;" />
+                ⚖️ <span style="color:#C5A028;">Dr. Almeida</span> & Associados
+              </div>
               <button onclick="lawShowBooking()"
                       style="background:#C5A028;color:#0A0A14;border:none;padding:7px 16px;border-radius:6px;font-weight:700;cursor:pointer;font-size:0.8rem;white-space:nowrap;transition:all 0.2s;"
                       onmouseover="this.style.background='#D4B030';" onmouseout="this.style.background='#C5A028';">
@@ -722,7 +734,11 @@
 
             <!-- NAVBAR da clínica -->
             <nav style="display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:#fff;border-bottom:1px solid #f0e8e0;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-              <div style="font-weight:900;font-size:1rem;color:#9B4E8A;">🌸 Studio <span style="color:#C97DB0;">Belle</span></div>
+              <div style="font-weight:900;font-size:1rem;color:#9B4E8A;display:flex;align-items:center;gap:8px;">
+                <!-- Logo JG INFO versão clara (fundo claro da clínica) -->
+                <img src="assets/logo-light.png" alt="JG INFO" style="height:30px;width:auto;" />
+                🌸 Studio <span style="color:#C97DB0;">Belle</span>
+              </div>
               <button onclick="clinicShowBooking()"
                       style="background:#9B4E8A;color:#fff;border:none;padding:7px 16px;border-radius:30px;font-weight:600;cursor:pointer;font-size:0.82rem;transition:all 0.2s;"
                       onmouseover="this.style.background='#7A3A6E';" onmouseout="this.style.background='#9B4E8A';">
@@ -867,7 +883,11 @@
 
             <!-- NAVBAR da loja -->
             <nav style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#111;border-bottom:1px solid #1a1a1a;position:sticky;top:0;z-index:10;gap:10px;">
-              <div style="font-weight:900;font-size:0.95rem;letter-spacing:0.04em;white-space:nowrap;">🛍️ <span style="color:#0066FF;">URBAN</span>STORE</div>
+              <div style="font-weight:900;font-size:0.95rem;letter-spacing:0.04em;white-space:nowrap;display:flex;align-items:center;gap:8px;">
+                <!-- Logo JG INFO versão escura (fundo escuro da loja) -->
+                <img src="assets/logo.png" alt="JG INFO" style="height:24px;width:auto;" />
+                🛍️ <span style="color:#0066FF;">URBAN</span>STORE
+              </div>
               <div style="flex:1;max-width:180px;">
                 <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-radius:20px;padding:6px 12px;font-size:0.76rem;color:#555;display:flex;align-items:center;gap:5px;">
                   <span>🔍</span><span>Buscar...</span>
