@@ -377,7 +377,7 @@ address {
 /* A altura controla o tamanho; a largura é proporcional automaticamente.               */
 /* Para aumentar/diminuir a logo, basta alterar o height abaixo.                        */
 .logo-img {
-  height: 50px;
+  height: 70px;   /* Header: maior tamanho entre todos os logos do site */
   width: auto;
   flex-shrink: 0;
   display: block;
