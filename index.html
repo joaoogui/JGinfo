@@ -34,24 +34,11 @@
       <!-- Logo -->
       <a href="#hero" class="header__logo" aria-label="JG INFO — Ir para o início">
         <!-- =============================================================
-             LOGO JG INFO — Baseada na imagem fornecida.
-             Estrutura: fundo escuro + colchetes azuis nos cantos + "JG" branco + "info" cinza.
-             Para ajustar o tamanho da logo, edite .logo-svg { height: ... } em styles.css.
+             LOGO JG INFO — Imagem PNG real com fundo transparente.
+             Para ajustar o tamanho, edite .logo-img em styles.css.
              ============================================================= -->
         <div class="logo-mark">
-          <svg class="logo-svg" viewBox="0 0 108 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <!-- Fundo escuro arredondado (fica visível sobre o hero transparente) -->
-            <rect width="108" height="50" rx="7" fill="#05080F"/>
-            <!-- Canto superior-esquerdo: traço azul em "L" (referência visual da imagem) -->
-            <polyline points="6,19 6,5 20,5" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
-            <!-- Canto inferior-direito: traço azul em "L" invertido (espelho do acima) -->
-            <polyline points="51,31 51,45 37,45" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
-            <!-- "JG" — letras principais em branco, fonte pesada (Space Grotesk carregada via Google Fonts) -->
-            <text x="9" y="38" font-family="Space Grotesk,Inter,sans-serif" font-weight="700" font-size="30" fill="#FFFFFF" letter-spacing="-0.5">JG</text>
-            <!-- "info" — menor, cinza, posicionada abaixo e à direita do G -->
-            <text x="53" y="44" font-family="Space Grotesk,Inter,sans-serif" font-weight="400" font-size="9.5" fill="#6B7280" letter-spacing="0.1em">info</text>
-          </svg>
-          <!-- Sem o <span class="logo-text"> pois "info" está integrado no SVG acima -->
+          <img src="assets/logo.png" alt="JG INFO" class="logo-img" />
         </div>
       </a>
 
@@ -477,15 +464,8 @@
       <!-- Brand -->
       <div class="footer__brand">
         <div class="logo-mark footer__logo">
-          <!-- Logo do rodapé — mesma SVG do header, reutilizada aqui -->
-          <svg class="logo-svg" viewBox="0 0 108 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="108" height="50" rx="7" fill="#05080F"/>
-            <polyline points="6,19 6,5 20,5" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
-            <polyline points="51,31 51,45 37,45" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
-            <text x="9" y="38" font-family="Space Grotesk,Inter,sans-serif" font-weight="700" font-size="30" fill="#FFFFFF" letter-spacing="-0.5">JG</text>
-            <text x="53" y="44" font-family="Space Grotesk,Inter,sans-serif" font-weight="400" font-size="9.5" fill="#6B7280" letter-spacing="0.1em">info</text>
-          </svg>
-          <!-- "info" integrada no SVG acima — sem <span> separado -->
+          <!-- Logo do rodapé — mesma imagem PNG do header -->
+          <img src="assets/logo.png" alt="JG INFO" class="logo-img" />
         </div>
         <p class="footer__tagline">
           Sites, Suporte de PC e Soluções NFC.<br/>Caxias — RJ.

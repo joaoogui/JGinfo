@@ -310,12 +310,15 @@ address { font-style: normal; }
   gap: var(--space-2);
 }
 
-/* Logo SVG — dimensões atualizadas para o novo design retangular (108×50 viewBox).     */
-/* A altura é fixa; a largura é calculada automaticamente pelo aspect-ratio do viewBox. */
-.logo-svg {
+/* Logo IMG — imagem PNG com fundo transparente.                                       */
+/* A altura controla o tamanho; a largura é proporcional automaticamente.               */
+/* Para aumentar/diminuir a logo, basta alterar o height abaixo.                        */
+.logo-img {
   height: 42px;   /* Ajuste esta altura para escalar a logo inteira */
-  width: auto;    /* Largura proporcional ao viewBox (108/50 ≈ 2.16x) */
+  width: auto;    /* Largura proporcional à imagem original */
   flex-shrink: 0;
+  display: block;
+  object-fit: contain;  /* Mantém proporção sem distorcer */
 }
 
 .logo-text {
