@@ -36,8 +36,10 @@
   --color-border-blue: rgba(0, 102, 255, 0.3);
 
   /* Tipografia */
-  --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono:   'JetBrains Mono', 'Courier New', monospace;
+  /* Space Grotesk: fonte principal escolhida por ter aparência tech, geométrica e moderna. */
+  /* Para trocar a fonte de todo o site, altere apenas a linha --font-sans abaixo.         */
+  --font-sans:   'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono:   'JetBrains Mono', 'Courier New', monospace;  /* Usada em tags, URLs, código */
 
   /* Tamanhos de fonte (escala fluída) */
   --text-xs:    0.75rem;    /* 12px */
@@ -308,9 +310,11 @@ address { font-style: normal; }
   gap: var(--space-2);
 }
 
+/* Logo SVG — dimensões atualizadas para o novo design retangular (108×50 viewBox).     */
+/* A altura é fixa; a largura é calculada automaticamente pelo aspect-ratio do viewBox. */
 .logo-svg {
-  width: 42px;
-  height: 42px;
+  height: 42px;   /* Ajuste esta altura para escalar a logo inteira */
+  width: auto;    /* Largura proporcional ao viewBox (108/50 ≈ 2.16x) */
   flex-shrink: 0;
 }
 

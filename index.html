@@ -10,7 +10,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Space Grotesk: fonte principal — geométrica, moderna e tech. Substitui a Inter. -->
+  <!-- JetBrains Mono: usada em elementos de código, tags e URLs do portfólio.          -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
@@ -31,22 +33,25 @@
 
       <!-- Logo -->
       <a href="#hero" class="header__logo" aria-label="JG INFO — Ir para o início">
+        <!-- =============================================================
+             LOGO JG INFO — Baseada na imagem fornecida.
+             Estrutura: fundo escuro + colchetes azuis nos cantos + "JG" branco + "info" cinza.
+             Para ajustar o tamanho da logo, edite .logo-svg { height: ... } em styles.css.
+             ============================================================= -->
         <div class="logo-mark">
-          <svg class="logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <!-- Hexagon base -->
-            <polygon points="30,2 55,16 55,44 30,58 5,44 5,16" fill="#0066FF" stroke="#0066FF" stroke-width="1"/>
-            <!-- Circuit trace horizontal -->
-            <line x1="5" y1="30" x2="14" y2="30" stroke="#fff" stroke-width="1.2" opacity="0.5"/>
-            <line x1="46" y1="30" x2="55" y2="30" stroke="#fff" stroke-width="1.2" opacity="0.5"/>
-            <!-- Circuit dot -->
-            <circle cx="14" cy="30" r="1.5" fill="#fff" opacity="0.6"/>
-            <circle cx="46" cy="30" r="1.5" fill="#fff" opacity="0.6"/>
-            <!-- J letter -->
-            <text x="13" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">J</text>
-            <!-- G letter -->
-            <text x="27" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">G</text>
+          <svg class="logo-svg" viewBox="0 0 108 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Fundo escuro arredondado (fica visível sobre o hero transparente) -->
+            <rect width="108" height="50" rx="7" fill="#05080F"/>
+            <!-- Canto superior-esquerdo: traço azul em "L" (referência visual da imagem) -->
+            <polyline points="6,19 6,5 20,5" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
+            <!-- Canto inferior-direito: traço azul em "L" invertido (espelho do acima) -->
+            <polyline points="51,31 51,45 37,45" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
+            <!-- "JG" — letras principais em branco, fonte pesada (Space Grotesk carregada via Google Fonts) -->
+            <text x="9" y="38" font-family="Space Grotesk,Inter,sans-serif" font-weight="700" font-size="30" fill="#FFFFFF" letter-spacing="-0.5">JG</text>
+            <!-- "info" — menor, cinza, posicionada abaixo e à direita do G -->
+            <text x="53" y="44" font-family="Space Grotesk,Inter,sans-serif" font-weight="400" font-size="9.5" fill="#6B7280" letter-spacing="0.1em">info</text>
           </svg>
-          <span class="logo-text">INFO</span>
+          <!-- Sem o <span class="logo-text"> pois "info" está integrado no SVG acima -->
         </div>
       </a>
 
@@ -61,11 +66,13 @@
             <ul class="nav__dropdown" role="list">
               <li><a href="#pilares" class="nav__dropdown-link">🌐 Criação de Sites</a></li>
               <li><a href="#pilares" class="nav__dropdown-link">🖥️ Suporte de PC</a></li>
+              <!-- NFC agora vive aqui dentro do dropdown Serviços -->
+              <li><a href="#nfc" class="nav__dropdown-link">📲 Soluções NFC</a></li>
             </ul>
           </li>
-          <li><a href="#nfc" class="nav__link">NFC</a></li>
+          <!-- "NFC" foi movido para dentro do dropdown "Serviços" (veja acima) -->
+          <!-- "Contato" removido: o botão "Chamar no Zap" ao lado já cumpre essa função -->
           <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
-          <li><a href="#contato" class="nav__link">Contato</a></li>
         </ul>
       </nav>
 
@@ -91,12 +98,13 @@
     <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
       <ul class="mobile-nav__list" role="list">
+        <!-- Mobile Nav: versão simplificada do menu desktop.                           -->
+        <!-- "Contato" removido (botão WhatsApp no final já faz esse papel).             -->
         <li><a href="#hero" class="mobile-nav__link">Início</a></li>
-        <li><a href="#pilares" class="mobile-nav__link">Criação de Sites</a></li>
-        <li><a href="#pilares" class="mobile-nav__link">Suporte de PC</a></li>
-        <li><a href="#nfc" class="mobile-nav__link">NFC</a></li>
+        <li><a href="#pilares" class="mobile-nav__link">🌐 Criação de Sites</a></li>
+        <li><a href="#pilares" class="mobile-nav__link">🖥️ Suporte de PC</a></li>
+        <li><a href="#nfc" class="mobile-nav__link">📲 Soluções NFC</a></li>
         <li><a href="#portfolio" class="mobile-nav__link">Portfólio</a></li>
-        <li><a href="#contato" class="mobile-nav__link">Contato</a></li>
         <li>
           <a href="https://wa.me/5521980256650?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
              class="btn btn--primary mobile-nav__cta" target="_blank" rel="noopener noreferrer">
@@ -469,12 +477,15 @@
       <!-- Brand -->
       <div class="footer__brand">
         <div class="logo-mark footer__logo">
-          <svg class="logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <polygon points="30,2 55,16 55,44 30,58 5,44 5,16" fill="#0066FF"/>
-            <text x="13" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">J</text>
-            <text x="27" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">G</text>
+          <!-- Logo do rodapé — mesma SVG do header, reutilizada aqui -->
+          <svg class="logo-svg" viewBox="0 0 108 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="108" height="50" rx="7" fill="#05080F"/>
+            <polyline points="6,19 6,5 20,5" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
+            <polyline points="51,31 51,45 37,45" stroke="#0066FF" stroke-width="2.2" stroke-linecap="square" fill="none"/>
+            <text x="9" y="38" font-family="Space Grotesk,Inter,sans-serif" font-weight="700" font-size="30" fill="#FFFFFF" letter-spacing="-0.5">JG</text>
+            <text x="53" y="44" font-family="Space Grotesk,Inter,sans-serif" font-weight="400" font-size="9.5" fill="#6B7280" letter-spacing="0.1em">info</text>
           </svg>
-          <span class="logo-text">INFO</span>
+          <!-- "info" integrada no SVG acima — sem <span> separado -->
         </div>
         <p class="footer__tagline">
           Sites, Suporte de PC e Soluções NFC.<br/>Caxias — RJ.
