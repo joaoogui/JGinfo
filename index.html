@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JG INFO - Sites Profissionais, Suporte de PC Completo e Soluções NFC para seu Negócio em Caxias - RJ." />
+  <meta name="keywords" content="sites profissionais, suporte de PC, NFC, cartão digital, Caxias RJ, JG INFO" />
+  <title>JG INFO | Sites, Suporte de PC e Soluções NFC — Caxias RJ</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CIRCUIT BACKGROUND OVERLAY (decorativo, gerado via CSS/SVG)
+       ============================================================ -->
+  <div class="circuit-bg" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       HEADER — fixo, transparente → sólido no scroll
+       ============================================================ -->
+  <header id="site-header" class="header" role="banner">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="header__logo" aria-label="JG INFO — Ir para o início">
+        <div class="logo-mark">
+          <svg class="logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Hexagon base -->
+            <polygon points="30,2 55,16 55,44 30,58 5,44 5,16" fill="#0066FF" stroke="#0066FF" stroke-width="1"/>
+            <!-- Circuit trace horizontal -->
+            <line x1="5" y1="30" x2="14" y2="30" stroke="#fff" stroke-width="1.2" opacity="0.5"/>
+            <line x1="46" y1="30" x2="55" y2="30" stroke="#fff" stroke-width="1.2" opacity="0.5"/>
+            <!-- Circuit dot -->
+            <circle cx="14" cy="30" r="1.5" fill="#fff" opacity="0.6"/>
+            <circle cx="46" cy="30" r="1.5" fill="#fff" opacity="0.6"/>
+            <!-- J letter -->
+            <text x="13" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">J</text>
+            <!-- G letter -->
+            <text x="27" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">G</text>
+          </svg>
+          <span class="logo-text">INFO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="nav__list" role="list">
+          <li><a href="#hero" class="nav__link">Início</a></li>
+          <li class="nav__item--dropdown">
+            <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Serviços <span class="dropdown-arrow">▾</span>
+            </button>
+            <ul class="nav__dropdown" role="list">
+              <li><a href="#pilares" class="nav__dropdown-link">🌐 Criação de Sites</a></li>
+              <li><a href="#pilares" class="nav__dropdown-link">🖥️ Suporte de PC</a></li>
+            </ul>
+          </li>
+          <li><a href="#nfc" class="nav__link">NFC</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="https://wa.me/5521980256650?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+         class="btn btn--primary header__cta"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Chamar no WhatsApp">
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Chamar no Zap
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="#hero" class="mobile-nav__link">Início</a></li>
+        <li><a href="#pilares" class="mobile-nav__link">Criação de Sites</a></li>
+        <li><a href="#pilares" class="mobile-nav__link">Suporte de PC</a></li>
+        <li><a href="#nfc" class="mobile-nav__link">NFC</a></li>
+        <li><a href="#portfolio" class="mobile-nav__link">Portfólio</a></li>
+        <li><a href="#contato" class="mobile-nav__link">Contato</a></li>
+        <li>
+          <a href="https://wa.me/5521980256650?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+             class="btn btn--primary mobile-nav__cta" target="_blank" rel="noopener noreferrer">
+            💬 Chamar no Zap
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__badge">
+        <span class="badge-dot"></span>
+        Atendimento em Caxias — RJ
+      </div>
+
+      <h1 id="hero-title" class="hero__title">
+        Sites Profissionais,<br/>
+        <span class="highlight">Suporte de PC Completo</span><br/>
+        e Soluções NFC para<br/>
+        seu Negócio.
+      </h1>
+
+      <p class="hero__subtitle">
+        Nós resolvemos o problema e fazemos seu PC e seu negócio voltarem a crescer.<br/>
+        Do diagnóstico ao resultado — rápido, acessível e sem enrolação.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn btn--outline hero__btn">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          Ver Portfólio Interativo
+        </a>
+        <a href="https://wa.me/5521980256650?text=Olá!%20Quero%20solicitar%20um%20orçamento."
+           class="btn btn--accent hero__btn" target="_blank" rel="noopener noreferrer">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.306A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+          </svg>
+          Solicitar Orçamento Agora
+        </a>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="hero__stats" aria-label="Números da JG INFO">
+        <div class="stat">
+          <strong class="stat__number">50+</strong>
+          <span class="stat__label">Clientes Atendidos</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__number">30+</strong>
+          <span class="stat__label">Sites Entregues</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__number">100%</strong>
+          <span class="stat__label">Satisfação Garantida</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="scroll-label">Role para ver</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PILARES SECTION — Nossos Pilares
+       ============================================================ -->
+  <section id="pilares" class="pilares section" aria-labelledby="pilares-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">O que fazemos</span>
+        <h2 id="pilares-title" class="section__title">Nossos Pilares</h2>
+        <p class="section__subtitle">Três frentes de atuação para resolver, crescer e digitalizar seu negócio.</p>
+      </div>
+
+      <div class="pilares__grid">
+
+        <!-- Pilar 1: Sites -->
+        <article class="pilar-card" data-index="1">
+          <div class="pilar-card__icon-wrap" aria-hidden="true">
+            <svg class="pilar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              <line x1="12" y1="2" x2="12" y2="22" stroke-opacity="0.3"/>
+            </svg>
+          </div>
+          <span class="pilar-card__number" aria-hidden="true">01</span>
+          <h3 class="pilar-card__title">Criação de Sites</h3>
+          <p class="pilar-card__desc">
+            Sites profissionais e de alta conversão para empresas, escritórios, comércios e profissionais autônomos. Responsivos, rápidos e prontos para vender.
+          </p>
+          <ul class="pilar-card__list" aria-label="Detalhes do serviço de sites">
+            <li>✦ Landing Pages de alta conversão</li>
+            <li>✦ Sites institucionais completos</li>
+            <li>✦ Lojas virtuais e portfólios</li>
+            <li>✦ Integração com WhatsApp e redes sociais</li>
+          </ul>
+          <a href="https://wa.me/5521980256650?text=Olá!%20Tenho%20interesse%20em%20criar%20um%20site."
+             class="pilar-card__link" target="_blank" rel="noopener noreferrer">
+            Quero meu site →
+          </a>
+        </article>
+
+        <!-- Pilar 2: Suporte PC -->
+        <article class="pilar-card pilar-card--featured" data-index="2">
+          <div class="pilar-card__badge">Mais Procurado</div>
+          <div class="pilar-card__icon-wrap" aria-hidden="true">
+            <svg class="pilar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+              <circle cx="17" cy="7" r="2" stroke-opacity="0.5"/>
+              <path d="M17 9v1.5" stroke-opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="pilar-card__number" aria-hidden="true">02</span>
+          <h3 class="pilar-card__title">Suporte de PC Completo</h3>
+          <p class="pilar-card__desc">
+            Do diagnóstico à solução. Montagem sob medida, formatação, manutenção preventiva e upgrades para seu computador voltar a voar.
+          </p>
+          <ul class="pilar-card__list" aria-label="Detalhes do serviço de PC">
+            <li>✦ Montagem de PCs personalizados</li>
+            <li>✦ Formatação e reinstalação de Windows</li>
+            <li>✦ Manutenção preventiva e corretiva</li>
+            <li>✦ Upgrades de memória, SSD, GPU</li>
+          </ul>
+          <a href="https://wa.me/5521980256650?text=Olá!%20Preciso%20de%20suporte%20para%20meu%20computador."
+             class="pilar-card__link" target="_blank" rel="noopener noreferrer">
+            Preciso de suporte →
+          </a>
+        </article>
+
+        <!-- Pilar 3: NFC -->
+        <article class="pilar-card" data-index="3">
+          <div class="pilar-card__icon-wrap" aria-hidden="true">
+            <svg class="pilar-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 8.5a6.5 6.5 0 0112 0"/>
+              <path d="M4 10a9 9 0 0116 0"/>
+              <path d="M2 11.5a11.5 11.5 0 0120 0"/>
+              <circle cx="12" cy="20" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="pilar-card__number" aria-hidden="true">03</span>
+          <h3 class="pilar-card__title">Soluções Digitais NFC</h3>
+          <p class="pilar-card__desc">
+            Cartões e etiquetas NFC inteligentes que conectam seus clientes ao Google, Pix, cardápio digital e muito mais — com um único toque.
+          </p>
+          <ul class="pilar-card__list" aria-label="Detalhes do serviço NFC">
+            <li>✦ Cartão NFC para avaliações no Google</li>
+            <li>✦ Pix instantâneo via NFC ou QR</li>
+            <li>✦ Cartão de visita digital</li>
+            <li>✦ Cardápio digital para restaurantes</li>
+          </ul>
+          <a href="#nfc" class="pilar-card__link">
+            Saiba mais sobre NFC →
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NFC SECTION — Destaque especial
+       ============================================================ -->
+  <section id="nfc" class="nfc-section section" aria-labelledby="nfc-title">
+    <div class="container nfc-section__inner">
+      <div class="nfc-section__content">
+        <span class="section__tag">Tecnologia NFC</span>
+        <h2 id="nfc-title" class="section__title">Um toque.<br/>Mil possibilidades.</h2>
+        <p class="nfc-section__desc">
+          Com nossas soluções NFC, seu cliente aproxima o celular e é direcionado para onde você quiser:
+          avaliação no Google, Pix, cardápio, portfólio, link de agendamento ou redes sociais.
+        </p>
+        <div class="nfc-section__items" aria-label="Tipos de cartão NFC">
+          <div class="nfc-item">
+            <span class="nfc-item__icon">⭐</span>
+            <div>
+              <strong>Avaliação Google</strong>
+              <p>Mais reviews = mais clientes. Facilite o processo.</p>
+            </div>
+          </div>
+          <div class="nfc-item">
+            <span class="nfc-item__icon">⚡</span>
+            <div>
+              <strong>Pix Instantâneo</strong>
+              <p>Receba pagamentos com um toque no cartão NFC.</p>
+            </div>
+          </div>
+          <div class="nfc-item">
+            <span class="nfc-item__icon">📲</span>
+            <div>
+              <strong>Cartão Digital</strong>
+              <p>Seu contato sempre à mão — sem papel, sem limite.</p>
+            </div>
+          </div>
+          <div class="nfc-item">
+            <span class="nfc-item__icon">🍽️</span>
+            <div>
+              <strong>Cardápio Digital</strong>
+              <p>Atualização em tempo real. Zero custo de impressão.</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/5521980256650?text=Olá!%20Tenho%20interesse%20no%20cartão%20NFC."
+           class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          Quero meu Cartão NFC
+        </a>
+      </div>
+
+      <!-- NFC Card visual -->
+      <div class="nfc-section__visual" aria-label="Demonstração visual do cartão NFC" aria-hidden="true">
+        <div class="nfc-card-demo">
+          <div class="nfc-card-demo__front">
+            <div class="nfc-card-demo__logo">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="30,2 55,16 55,44 30,58 5,44 5,16" fill="#0066FF"/>
+                <text x="13" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">J</text>
+                <text x="27" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">G</text>
+              </svg>
+              <span>JG INFO</span>
+            </div>
+            <div class="nfc-card-demo__wave">
+              <svg viewBox="0 0 50 50" fill="none" stroke="#fff" stroke-width="2.5">
+                <path d="M15 25 a10 10 0 0 1 20 0" opacity="0.4"/>
+                <path d="M10 25 a15 15 0 0 1 30 0" opacity="0.6"/>
+                <path d="M5 25 a20 20 0 0 1 40 0" opacity="0.8"/>
+                <circle cx="25" cy="25" r="2" fill="#fff"/>
+              </svg>
+            </div>
+            <p class="nfc-card-demo__tap">Aproxime seu celular</p>
+          </div>
+          <div class="nfc-card-demo__glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO SECTION
+       ============================================================ -->
+  <section id="portfolio" class="portfolio section" aria-labelledby="portfolio-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Portfólio</span>
+        <h2 id="portfolio-title" class="section__title">Veja como fica na prática</h2>
+        <p class="section__subtitle">Clique em um nicho para ver um exemplo funcional de site — tudo dentro desta página.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="portfolio__filters" role="tablist" aria-label="Filtrar por nicho">
+        <button class="portfolio__filter portfolio__filter--active" role="tab" aria-selected="true"
+                data-niche="barbershop" aria-controls="portfolio-preview">
+          <span class="filter__icon">✂️</span> Barbearia
+        </button>
+        <button class="portfolio__filter" role="tab" aria-selected="false"
+                data-niche="bakery" aria-controls="portfolio-preview">
+          <span class="filter__icon">🍞</span> Padaria / Restaurante
+        </button>
+        <button class="portfolio__filter" role="tab" aria-selected="false"
+                data-niche="law" aria-controls="portfolio-preview">
+          <span class="filter__icon">⚖️</span> Advocacia
+        </button>
+        <button class="portfolio__filter" role="tab" aria-selected="false"
+                data-niche="clinic" aria-controls="portfolio-preview">
+          <span class="filter__icon">💆</span> Clínica / Estética
+        </button>
+        <button class="portfolio__filter" role="tab" aria-selected="false"
+                data-niche="store" aria-controls="portfolio-preview">
+          <span class="filter__icon">🛍️</span> Loja / Shopping
+        </button>
+      </div>
+
+      <!-- Preview Frame -->
+      <div class="portfolio__frame" id="portfolio-preview" role="tabpanel" aria-label="Preview do site">
+        <div class="portfolio__frame-toolbar" aria-hidden="true">
+          <span class="frame-dot frame-dot--red"></span>
+          <span class="frame-dot frame-dot--yellow"></span>
+          <span class="frame-dot frame-dot--green"></span>
+          <span class="frame-url">jginfo.com.br/preview/barbearia</span>
+        </div>
+        <div class="portfolio__frame-content" id="frame-content">
+          <!-- Content injected by portfolio.js -->
+        </div>
+      </div>
+
+      <p class="portfolio__cta-text">
+        Gostou? <a href="https://wa.me/5521980256650?text=Olá!%20Vi%20o%20portfólio%20e%20quero%20um%20site%20assim." target="_blank" rel="noopener noreferrer" class="link--accent">Fale conosco e peça o seu →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO / WHATSAPP CTA SECTION
+       ============================================================ -->
+  <section id="contato" class="contato section" aria-labelledby="contato-title">
+    <div class="container contato__inner">
+      <div class="section__header">
+        <span class="section__tag">Fale Conosco</span>
+        <h2 id="contato-title" class="section__title">Pronto para crescer?</h2>
+        <p class="section__subtitle">Atendimento rápido pelo WhatsApp. Resposta em até 1 hora.</p>
+      </div>
+
+      <div class="contato__cards">
+        <a href="https://wa.me/5521980256650" class="contato-card" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+          <div class="contato-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <strong>(21) 98025-6650</strong>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="mailto:contato@jginfo.com.br" class="contato-card" aria-label="Enviar e-mail">
+          <div class="contato-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="2,4 12,13 22,4"/>
+            </svg>
+          </div>
+          <strong>contato@jginfo.com.br</strong>
+          <span>E-mail</span>
+        </a>
+
+        <div class="contato-card contato-card--static" aria-label="Localização">
+          <div class="contato-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <strong>Caxias — RJ</strong>
+          <span>Nossa localização</span>
+        </div>
+
+        <a href="https://instagram.com/jginfo.sites" class="contato-card" target="_blank" rel="noopener noreferrer" aria-label="Seguir no Instagram">
+          <div class="contato-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4.5"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <strong>@jginfo.sites</strong>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <!-- Brand -->
+      <div class="footer__brand">
+        <div class="logo-mark footer__logo">
+          <svg class="logo-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="30,2 55,16 55,44 30,58 5,44 5,16" fill="#0066FF"/>
+            <text x="13" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">J</text>
+            <text x="27" y="37" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#fff">G</text>
+          </svg>
+          <span class="logo-text">INFO</span>
+        </div>
+        <p class="footer__tagline">
+          Sites, Suporte de PC e Soluções NFC.<br/>Caxias — RJ.
+        </p>
+        <div class="footer__socials" aria-label="Redes sociais">
+          <a href="https://instagram.com/jginfo.sites" target="_blank" rel="noopener noreferrer" aria-label="Instagram @jginfo.sites" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4.5"/>
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5521980256650" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <nav class="footer__nav" aria-label="Links rápidos do rodapé">
+        <h3 class="footer__nav-title">Links Rápidos</h3>
+        <ul role="list">
+          <li><a href="#hero" class="footer__link">Início</a></li>
+          <li><a href="#pilares" class="footer__link">Serviços</a></li>
+          <li><a href="#nfc" class="footer__link">Soluções NFC</a></li>
+          <li><a href="#portfolio" class="footer__link">Portfólio</a></li>
+          <li><a href="#contato" class="footer__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Services -->
+      <div class="footer__nav" aria-label="Serviços do rodapé">
+        <h3 class="footer__nav-title">Serviços</h3>
+        <ul role="list">
+          <li><a href="#pilares" class="footer__link">Criação de Sites</a></li>
+          <li><a href="#pilares" class="footer__link">Suporte de PC</a></li>
+          <li><a href="#nfc" class="footer__link">Cartão NFC Google</a></li>
+          <li><a href="#nfc" class="footer__link">Pix NFC</a></li>
+          <li><a href="#nfc" class="footer__link">Cardápio Digital</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact info -->
+      <address class="footer__contact" aria-label="Informações de contato">
+        <h3 class="footer__nav-title">Contato</h3>
+        <ul role="list">
+          <li>
+            <a href="https://wa.me/5521980256650" class="footer__link footer__contact-item" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">📱</span> (21) 98025-6650
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@jginfo.com.br" class="footer__link footer__contact-item">
+              <span aria-hidden="true">✉️</span> contato@jginfo.com.br
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <span aria-hidden="true">📍</span> Caxias — Rio de Janeiro, RJ
+          </li>
+          <li>
+            <a href="https://instagram.com/jginfo.sites" class="footer__link footer__contact-item" target="_blank" rel="noopener noreferrer">
+              <span aria-hidden="true">📸</span> @jginfo.sites
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="footer__copy">
+      <div class="container">
+        <p>© <span id="year"></span> JG INFO — Todos os direitos reservados. Feito com ❤️ em Caxias — RJ.</p>
+        <p class="footer__copy-sub">Sites • Suporte de PC • Soluções NFC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/5521980256650?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+     aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">Falar no WhatsApp</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

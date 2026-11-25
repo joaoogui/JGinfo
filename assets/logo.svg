@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  JG INFO — Logo Principal
+  Uso: <img src="assets/logo.svg" alt="JG INFO"> ou inline no HTML
+  Cores: Azul #0066FF (hexágono), Branco #FFFFFF (letras), Detalhe de circuito
+-->
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="JG INFO logotipo">
+  <title>JG INFO</title>
+
+  <!-- Hexágono base -->
+  <polygon points="30,2 55,15 55,45 30,58 5,45 5,15"
+           fill="#0066FF" stroke="#003DB3" stroke-width="0.5"/>
+
+  <!-- Traços de circuito (decorativo) -->
+  <line x1="5" y1="30" x2="14" y2="30" stroke="#FFFFFF" stroke-width="1.2" opacity="0.45"/>
+  <line x1="46" y1="30" x2="55" y2="30" stroke="#FFFFFF" stroke-width="1.2" opacity="0.45"/>
+  <line x1="30" y1="2" x2="30" y2="10" stroke="#FFFFFF" stroke-width="1.2" opacity="0.3"/>
+  <line x1="30" y1="50" x2="30" y2="58" stroke="#FFFFFF" stroke-width="1.2" opacity="0.3"/>
+
+  <!-- Pontos de circuito -->
+  <circle cx="14" cy="30" r="1.8" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="46" cy="30" r="1.8" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="30" cy="10" r="1.8" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="30" cy="50" r="1.8" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Letras JG -->
+  <text x="13" y="37"
+        font-family="Inter, system-ui, sans-serif"
+        font-weight="800"
+        font-size="19"
+        fill="#FFFFFF"
+        letter-spacing="-0.5">J</text>
+  <text x="27" y="37"
+        font-family="Inter, system-ui, sans-serif"
+        font-weight="800"
+        font-size="19"
+        fill="#FFFFFF"
+        letter-spacing="-0.5">G</text>
+
+  <!-- Texto INFO ao lado -->
+  <text x="68" y="30"
+        font-family="Inter, system-ui, sans-serif"
+        font-weight="700"
+        font-size="22"
+        fill="#FFFFFF"
+        letter-spacing="0.08em">INFO</text>
+
+  <!-- Linha decorativa abaixo de INFO -->
+  <line x1="68" y1="35" x2="136" y2="35" stroke="#0066FF" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Sub-tagline -->
+  <text x="68" y="47"
+        font-family="Inter, system-ui, sans-serif"
+        font-weight="400"
+        font-size="8.5"
+        fill="#94A3B8"
+        letter-spacing="0.18em">TECNOLOGIA • CAXIAS RJ</text>
+</svg>
