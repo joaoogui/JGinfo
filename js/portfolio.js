@@ -468,6 +468,14 @@
         var bakeryItems = [];   // Array de itens no carrinho {name, price}
         var bakeryTotal = 0;    // Total acumulado em R$
 
+        /** SEGURANÇA: escapa caracteres especiais de HTML antes de usar innerHTML.
+            Hoje os nomes vêm de uma lista fixa, mas se um dia vierem de formulário
+            ou API, isso impede que alguém injete código (XSS). */
+        function bakeryEsc(s) {
+          return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                          .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
+
         /** Adiciona produto ao carrinho e exibe toast de confirmação */
         function bakeryAddToCart(name, price, btn) {
           bakeryItems.push({ name: name, price: price });
@@ -512,8 +520,8 @@
             } else {
               itemsEl.innerHTML = bakeryItems.map(function (item) {
                 return '<div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0e8d0;">' +
-                  '<span style="font-size:0.88rem;">' + item.name + '</span>' +
-                  '<span style="font-weight:700;color:#D4870A;">R$ ' + item.price + '</span>' +
+                  '<span style="font-size:0.88rem;">' + bakeryEsc(item.name) + '</span>' +
+                  '<span style="font-weight:700;color:#D4870A;">R$ ' + bakeryEsc(item.price) + '</span>' +
                   '</div>';
               }).join('');
             }
@@ -993,6 +1001,12 @@
       scripts: `
         /* ── LOJA: Variáveis e funções do protótipo ── */
         var storeItems = [];    // Array de itens {name, price}
+
+        /** SEGURANÇA: escapa HTML antes de usar innerHTML (ver bakeryEsc). */
+        function storeEsc(s) {
+          return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                          .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
         var storeTotal = 0;    // Total acumulado em R$
 
         /** Adiciona produto ao carrinho com animação e toast */
@@ -1038,7 +1052,7 @@
             } else {
               itemsEl.innerHTML = storeItems.map(function (item) {
                 return '<div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #1a1a1a;">' +
-                  '<span style="font-size:0.85rem;">' + item.name + '</span>' +
+                  '<span style="font-size:0.85rem;">' + storeEsc(item.name) + '</span>' +
                   '<span style="font-weight:700;color:#0066FF;">R$ ' + item.price.toLocaleString("pt-BR") + '</span>' +
                   '</div>';
               }).join('');

@@ -1,0 +1,31 @@
+# Segredos e credenciais — NUNCA versionar
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.crt
+secrets.*
+credentials*.json
+service-account*.json
+
+# Backups e dumps (podem conter dados de clientes)
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.old
+*.zip
+*.csv
+*.xlsx
+
+# Lixo de sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
+*.log
